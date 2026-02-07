@@ -1,0 +1,2 @@
+risk_id,risk_statement,control_id,control_description,control_type,owner,frequency,evidence,test_procedure,result,finding_ref
+R-LOG-01,Critical logs not collected/monitored,C-LOG-01,Central SIEM ingestion for critical sources,Detective,SOC Lead,Continuous,SIEM source list; retention config,Verify source coverage + sample alerts,,
