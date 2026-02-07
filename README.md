@@ -51,7 +51,7 @@ flowchart LR
     F --> G[Audit Report]
     G --> H[Corrective Actions CAPA]
 ```
-##Folder Explanation
+## Folder Explanation
 ---
 01_Governance_And_Context
 ---
