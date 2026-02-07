@@ -1,4 +1,4 @@
-# 🛡️ Information Security Audit Playbook – ISO/IEC 27001:2022
+##  🛡️ Information Security Audit Playbook – ISO/IEC 27001:2022
 
 A practical, audit-ready **Information Security Audit Playbook** aligned with **ISO/IEC 27001:2022**, designed to demonstrate how an organization can plan, execute, and document an internal information security audit with full traceability from **risk → control → evidence → improvement**.
 
@@ -51,7 +51,7 @@ flowchart LR
     F --> G[Audit Report]
     G --> H[Corrective Actions CAPA]
 ```
-Folder Explanation
+##Folder Explanation
 ---
 01_Governance_And_Context
 ---
@@ -170,7 +170,7 @@ flowchart LR
 ```
 
 
-Key Concepts Explained Simply
+## Key Concepts Explained Simply
 ---
 RCM (Risk Control Matrix)
 Links risks to controls and explains how auditors test them.
