@@ -52,7 +52,9 @@ flowchart LR
     G --> H[Corrective Actions CAPA]
 ```
 Folder Explanation
-🏛️ 01_Governance_And_Context
+---
+01_Governance_And_Context
+---
 
 Defines the ISMS foundation:
 
@@ -65,7 +67,7 @@ Roles & responsibilities
 ➡️ Aligns with ISO 27001 Clauses 4 & 5
 
 ⚠️ 02_Risk_Management
-
+---
 Implements the risk-based approach:
 
 Risk assessment methodology
@@ -77,7 +79,7 @@ Risk treatment logic
 ➡️ Aligns with ISO 27001 Clause 6
 
 🧩 03_Control_Framework_Mapping
-
+---
 Core compliance mapping:
 
 Statement of Applicability (SoA)
@@ -100,8 +102,8 @@ Evidence reference
 
 ➡️ Aligns with ISO 27001 Annex A
 
-🧪 04_Audit_Execution
-
+ 04_Audit_Execution
+---
 Shows how the audit is performed:
 
 Audit plan & checklists
@@ -115,7 +117,7 @@ Interviews validate that controls are actually followed, not just documented.
 ➡️ Aligns with ISO 27001 Clause 9.2
 
 📁 05_Evidence_Repository
-
+---
 Contains objective audit evidence, including:
 
 Cloud security screenshots
@@ -133,7 +135,7 @@ Evidence is referenced directly from the RCM and interviews.
 ➡️ Supports audit traceability
 
 🧪 11_case_study
-
+---
 A complete end-to-end internal audit case study:
 
 Internal audit execution
@@ -169,7 +171,7 @@ flowchart LR
 
 
 Key Concepts Explained Simply
-
+---
 RCM (Risk Control Matrix)
 Links risks to controls and explains how auditors test them.
 
