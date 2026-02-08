@@ -41,6 +41,8 @@ flowchart LR
     E --> F[Evidence Review]
     F --> G[Audit Report]
     G --> H[Corrective Action Plan]
+```
+
  All examples are fictional/sanitized for use.
 
 ---
