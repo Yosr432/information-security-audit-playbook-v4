@@ -1,45 +1,36 @@
-##  🛡️ Information Security Audit Playbook – ISO/IEC 27001:2022
+# 🛡️ Information Security & IT Risk Audit Playbook  
+**ISO/IEC 27001:2022 | NIST CSF | CIS Controls**
 
-A practical, audit-ready **Information Security Audit Playbook** aligned with **ISO/IEC 27001:2022**, designed to demonstrate how an organization can plan, execute, and document an internal information security audit with full traceability from **risk → control → evidence → improvement**.
+A consulting-grade **information security audit playbook** demonstrating an end-to-end, risk-based **ISO/IEC 27001:2022 internal audit**, enhanced with **NIST Cybersecurity Framework** risk coverage and **CIS Critical Security Controls** technical benchmarking.
 
-This repository is built as a **realistic ISMS case study**, not just theory.**Note:** All examples are fictional/sanitized for use.
-
----
-
-
-## Contents 
-- Audit planning + scope pack
-- Risk assessment methodology (inherent/residual)
-- Framework mapping (ISO 27001 / NIST CSF / CIS)
-- Control test programs (access, network, logging, vuln mgmt, cloud governance)
-- Evidence checklists + sample evidence requests
-- Findings, risk rating, executive summary, management response workflow
-
-
+This repository is built as a **realistic audit case study**, not a theoretical framework summary.
 
 ---
 
-## 🎯 Project Objectives
+## 📌 About the Playbook
 
-This project demonstrates how to:
+This project simulates how a multinational organization designs, executes, and documents an **information security and IT risk audit**, following **real audit methodology** used by consultants and internal audit teams.
 
-- Apply a **risk-based approach** to information security audits
-- Map risks to **ISO 27001 Annex A controls**
-- Build a **Risk Control Matrix (RCM)** with audit tests
-- Collect and organize **objective evidence**
-- Validate controls through **interviews**
-- Perform an **internal audit** and document findings
-- Manage **corrective actions (CAPA)**
-
-It is suitable for:
-- ISO 27001 learners
-- Junior auditors / GRC analysts
-- Cybersecurity students
-- ISMS practitioners preparing for audits
+All examples, evidence, and organizations are **fictional or sanitized** and intended for **educational and portfolio demonstration purposes**.
 
 ---
 
-## 🧭 High-Level Audit Flow
+## 🎯 Objectives
+
+This playbook demonstrates how to:
+
+- Apply a **risk-based audit approach**
+- Perform an **ISO 27001 internal audit**
+- Build a **Risk Control Matrix (RCM)**
+- Define a **Statement of Applicability (SoA)**
+- Conduct **control testing, interviews, and evidence review**
+- Produce **audit findings and executive summaries**
+- Manage **nonconformities and corrective actions (CAPA)**
+- Ensure **full audit traceability**
+
+---
+
+## 🧭 High-Level ISO 27001 Audit Flow
 
 ```mermaid
 flowchart LR
@@ -49,12 +40,22 @@ flowchart LR
     D --> E[Audit Execution]
     E --> F[Evidence Review]
     F --> G[Audit Report]
-    G --> H[Corrective Actions CAPA]
-```
-## Folder Explanation
+    G --> H[Corrective Action Plan]
+ All examples are fictional/sanitized for use.
+
 ---
-01_Governance_And_Context
----
+## Repository Structure
+information-security-audit-playbook-v4/
+├── 01_Governance_And_Context
+├── 02_Risk_Management
+├── 03_Control_Framework_Mapping
+├── 04_Audit_Execution
+├── 05_Evidence_Repository
+└── 11_case_study
+
+
+##  Folder Overview
+🏛️ 01_Governance_And_Context
 
 Defines the ISMS foundation:
 
@@ -62,147 +63,107 @@ ISMS scope
 
 Security policies
 
-Roles & responsibilities
+Roles and responsibilities
+ISO 27001 Clauses: 4, 5
 
-➡️ Aligns with ISO 27001 Clauses 4 & 5
+02_Risk_Management
 
-⚠️ 02_Risk_Management
----
-Implements the risk-based approach:
+Implements the risk assessment process:
 
-Risk assessment methodology
+Risk methodology
 
 Risk register
 
 Risk treatment logic
-
-➡️ Aligns with ISO 27001 Clause 6
+ISO 27001 Clause: 6
 
 🧩 03_Control_Framework_Mapping
----
-Core compliance mapping:
+
+Core compliance and assurance artifacts:
 
 Statement of Applicability (SoA)
 
 Risk Control Matrix (RCM)
 
-Mapping to Annex A controls
+ISO 27001 ↔ NIST CSF mapping
 
-Each RCM entry includes:
+ISO 27001 ↔ CIS Controls mapping
 
-Risk
+This folder is the heart of the audit design.
 
-Control
+04_Audit_Execution
 
-Test procedure
-
-Interview reference
-
-Evidence reference
-
-➡️ Aligns with ISO 27001 Annex A
-
- 04_Audit_Execution
----
 Shows how the audit is performed:
 
-Audit plan & checklists
+Audit plans and checklists
 
 Control testing procedures
 
 Interview records with control owners
+ISO 27001 Clause: 9.2
 
-Interviews validate that controls are actually followed, not just documented.
+05_Evidence_Repository
 
-➡️ Aligns with ISO 27001 Clause 9.2
+Contains objective audit evidence:
 
-📁 05_Evidence_Repository
----
-Contains objective audit evidence, including:
+IAM and MFA screenshots
 
-Cloud security screenshots
-
-MFA enforcement
-
-Access reviews
+Access review records
 
 Logging dashboards
 
-Backup & restore tests
+Backup and restore tests
 
-Evidence is referenced directly from the RCM and interviews.
+Evidence is directly referenced in the RCM and interviews.
 
-➡️ Supports audit traceability
+11_case_study
 
-🧪 11_case_study
----
-A complete end-to-end internal audit case study:
+A complete internal audit case study:
 
-Internal audit execution
+Internal audit report
 
-Audit report with findings
+Audit findings
 
 Corrective Action Plan (CAPA)
 
-Demonstrates:
-
-Nonconformity handling
-
 Root cause analysis
+ISO 27001 Clauses: 9, 10
 
-Corrective & preventive actions
+Key Audit Artifacts
 
-➡️ Aligns with ISO 27001 Clauses 9 & 10
-
-
-this project enforces full traceability:
-
-
-```mermaid
-flowchart LR
-    Risk --> SoA
-    SoA --> RCM
-    RCM --> Test
-    Test --> Interview
-    Interview --> Evidence
-    Evidence --> Finding
-    Finding --> CAPA
-```
+| Artifact      | Purpose                         |
+| ------------- | ------------------------------- |
+| Risk Register | Identify and assess risks       |
+| SoA           | Justify control applicability   |
+| RCM           | Link risk → control → test      |
+| Interviews    | Validate real implementation    |
+| Evidence      | Objective proof                 |
+| Audit Report  | Findings & conclusions          |
+| CAPA          | Corrective & preventive actions |
 
 
-## Key Concepts Explained Simply
----
-RCM (Risk Control Matrix)
-Links risks to controls and explains how auditors test them.
+Use of Security Frameworks
 
-SoA (Statement of Applicability)
-Explains which Annex A controls apply and why.
+This project uses multiple frameworks in a complementary way:
 
-Interview Evidence
-Confirms that people understand and follow the controls.
+ISO/IEC 27001:2022
+Primary framework used to design and audit the Information Security
+Management System (ISMS), including governance, risk management,
+control selection, and continual improvement.
 
-CAPA
-Documents how issues are fixed and prevented from happening again.
+NIST Cybersecurity Framework (CSF)
+Used as a risk coverage model to ensure that audit controls address
+all key cybersecurity functions: Identify, Protect, Detect, Respond,
+and Recover.
 
+CIS Critical Security Controls
+Used as technical implementation benchmarks to validate that
+security controls follow industry best practices.
 
-## Mapping YOUR RCM controls → NIST CSF functions
+ISO 27001 serves as the backbone, while NIST CSF and CIS Controls enhance
+governance clarity and technical assurance.
 
-Based on what you already have in your RCM:
-| RCM Area             | Example Control (ISO 27001)         | What it does                | NIST Function |
-| -------------------- | ----------------------------------- | --------------------------- | ------------- |
-| Risk Assessment      | Risk register, scope definition     | Identify assets & risks     | **Identify**  |
-| IAM / MFA            | A.5.15, A.8.5 – MFA, access control | Prevent unauthorized access | **Protect**   |
-| Secure Configuration | A.8.9 – baseline configurations     | Reduce attack surface       | **Protect**   |
-| Logging & Monitoring | A.8.15 – centralized logging        | Detect suspicious activity  | **Detect**    |
-| Incident Handling    | Audit findings & escalation         | Manage incidents            | **Respond**   |
-| Backup & Recovery    | A.8.13 – backup & restore testing   | Restore operations          | **Recover**   |
-
-
-## 🔗 RCM to NIST CSF Mapping
-
-The Risk Control Matrix (RCM) in this project is aligned with the
-NIST Cybersecurity Framework to ensure full coverage of cybersecurity
-risk areas.
+RCM Controls Mapped to NIST CSF
 
 ```mermaid
 flowchart LR
@@ -218,21 +179,17 @@ flowchart LR
     BCK[Backup & Restore<br/>ISO A.8.13] --> RC[RECOVER]
 ```
 
+CIS Controls Alignment
 
----
+```mermaid
+flowchart LR
+    IAM[Access Control & MFA] --> CIS6[CIS 6 – Access Control Management]
+    LOG[Logging & Monitoring] --> CIS8[CIS 8 – Audit Log Management]
+    BCK[Backup & Restore] --> CIS11[CIS 11 – Data Recovery]
+    CONF[Secure Configuration] --> CIS4[CIS 4 – Secure Configuration]
+```
 
-# RCM → Evidence → CAPA Diagram (Very Important)
-
-
-
-### Mermaid diagram
-
-
-## 🔄 Audit Traceability: RCM → Evidence → CAPA
-
-This project enforces full audit traceability from risk identification
-to corrective action.
-
+Audit Traceability: RCM → Evidence → CAPA
 ```mermaid
 flowchart LR
     RISK[Risk Identified] --> RCM[Risk Control Matrix]
@@ -242,10 +199,7 @@ flowchart LR
     EVID --> FIND[Audit Finding]
     FIND --> CAPA[Corrective Action Plan]
 ```
-## 🧭 How to Navigate This Repository
-
-This repository follows the logical flow of an ISO 27001 internal audit.
-
+How to Navigate This Repository
 ```mermaid
 flowchart TB
     GOV[01 Governance & Context] --> RISK[02 Risk Management]
@@ -254,10 +208,7 @@ flowchart TB
     AUD --> EVID[05 Evidence Repository]
     EVID --> CASE[11 Case Study & CAPA]
 ```
+Summary
 
-
-
-
-
-
+“This project demonstrates a full ISO 27001 internal audit lifecycle, including risk assessment, control mapping, audit execution, interviews, evidence review, and corrective actions, with cross-framework alignment to NIST CSF and CIS Controls.
 
