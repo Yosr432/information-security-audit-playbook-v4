@@ -185,6 +185,79 @@ CAPA
 Documents how issues are fixed and prevented from happening again.
 
 
+## Mapping YOUR RCM controls → NIST CSF functions
+
+Based on what you already have in your RCM:
+| RCM Area             | Example Control (ISO 27001)         | What it does                | NIST Function |
+| -------------------- | ----------------------------------- | --------------------------- | ------------- |
+| Risk Assessment      | Risk register, scope definition     | Identify assets & risks     | **Identify**  |
+| IAM / MFA            | A.5.15, A.8.5 – MFA, access control | Prevent unauthorized access | **Protect**   |
+| Secure Configuration | A.8.9 – baseline configurations     | Reduce attack surface       | **Protect**   |
+| Logging & Monitoring | A.8.15 – centralized logging        | Detect suspicious activity  | **Detect**    |
+| Incident Handling    | Audit findings & escalation         | Manage incidents            | **Respond**   |
+| Backup & Recovery    | A.8.13 – backup & restore testing   | Restore operations          | **Recover**   |
+
+
+## 🔗 RCM to NIST CSF Mapping
+
+The Risk Control Matrix (RCM) in this project is aligned with the
+NIST Cybersecurity Framework to ensure full coverage of cybersecurity
+risk areas.
+
+```mermaid
+flowchart LR
+    R[Risk Assessment<br/>Risk Register] --> I[IDENTIFY]
+
+    IAM[MFA & Access Control<br/>ISO A.5.15 / A.8.5] --> P[PROTECT]
+    CONF[Secure Configuration<br/>ISO A.8.9] --> P
+
+    LOG[Logging & Monitoring<br/>ISO A.8.15] --> D[DETECT]
+
+    IR[Audit Findings<br/>Incident Handling] --> RS[RESPOND]
+
+    BCK[Backup & Restore<br/>ISO A.8.13] --> RC[RECOVER]
+```
+
+
+---
+
+# RCM → Evidence → CAPA Diagram (Very Important)
+
+
+
+### Mermaid diagram
+
+```markdown
+## 🔄 Audit Traceability: RCM → Evidence → CAPA
+
+This project enforces full audit traceability from risk identification
+to corrective action.
+
+```mermaid
+flowchart LR
+    RISK[Risk Identified] --> RCM[Risk Control Matrix]
+    RCM --> TEST[Control Testing]
+    TEST --> INT[Interviews]
+    TEST --> EVID[Evidence Review]
+    EVID --> FIND[Audit Finding]
+    FIND --> CAPA[Corrective Action Plan]
+
+## 🧭 How to Navigate This Repository
+
+This repository follows the logical flow of an ISO 27001 internal audit.
+
+```mermaid
+flowchart TB
+    GOV[01 Governance & Context] --> RISK[02 Risk Management]
+    RISK --> MAP[03 Control Framework Mapping]
+    MAP --> AUD[04 Audit Execution]
+    AUD --> EVID[05 Evidence Repository]
+    EVID --> CASE[11 Case Study & CAPA]
+
+
+
+
+
 
 
 
