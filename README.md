@@ -227,7 +227,7 @@ flowchart LR
 
 ### Mermaid diagram
 
-```markdown
+
 ## 🔄 Audit Traceability: RCM → Evidence → CAPA
 
 This project enforces full audit traceability from risk identification
@@ -241,7 +241,7 @@ flowchart LR
     TEST --> EVID[Evidence Review]
     EVID --> FIND[Audit Finding]
     FIND --> CAPA[Corrective Action Plan]
-
+```
 ## 🧭 How to Navigate This Repository
 
 This repository follows the logical flow of an ISO 27001 internal audit.
@@ -253,7 +253,7 @@ flowchart TB
     MAP --> AUD[04 Audit Execution]
     AUD --> EVID[05 Evidence Repository]
     EVID --> CASE[11 Case Study & CAPA]
-
+```
 
 
 
