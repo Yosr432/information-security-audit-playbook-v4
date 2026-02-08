@@ -132,6 +132,7 @@ Root cause analysis
 ISO 27001 Clauses: 9, 10
 
 Key Audit Artifacts
+---
 
 | Artifact      | Purpose                         |
 | ------------- | ------------------------------- |
@@ -145,7 +146,7 @@ Key Audit Artifacts
 
 
 Use of Security Frameworks
-
+---
 This project uses multiple frameworks in a complementary way:
 
 ISO/IEC 27001:2022
@@ -182,6 +183,7 @@ flowchart LR
 ```
 
 CIS Controls Alignment
+---
 
 ```mermaid
 flowchart LR
@@ -192,6 +194,7 @@ flowchart LR
 ```
 
 Audit Traceability: RCM → Evidence → CAPA
+---
 ```mermaid
 flowchart LR
     RISK[Risk Identified] --> RCM[Risk Control Matrix]
@@ -202,6 +205,7 @@ flowchart LR
     FIND --> CAPA[Corrective Action Plan]
 ```
 How to Navigate This Repository
+---
 ```mermaid
 flowchart TB
     GOV[01 Governance & Context] --> RISK[02 Risk Management]
@@ -211,6 +215,7 @@ flowchart TB
     EVID --> CASE[11 Case Study & CAPA]
 ```
 Summary
+---
 
 “This project demonstrates a full ISO 27001 internal audit lifecycle, including risk assessment, control mapping, audit execution, interviews, evidence review, and corrective actions, with cross-framework alignment to NIST CSF and CIS Controls.
 
